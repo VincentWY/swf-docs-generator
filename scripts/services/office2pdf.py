@@ -29,6 +29,7 @@ def convert():
                         cursor = db.cursor()
                         cursor.execute(sql)
                         cursor.close()
+                        db.commit()
                         db.close()
         except Exception, e:
             print e
