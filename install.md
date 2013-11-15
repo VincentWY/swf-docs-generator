@@ -373,6 +373,11 @@ command=python /data/www/scripts/services/pdf2swf.py
 user=nginx
 ```
 
+使用openoffice时，[program:soffice]节如下：
+command=/opt/openoffice4/program/soffice -headless -accept=socket,host=localhost,port=8100;urp;StarOffice.ServiceManager -nofirststartwizard -nologo
+[program:office2pdf]
+
+
 开机启动supervisord
 
 ```
